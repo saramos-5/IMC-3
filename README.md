@@ -1,2 +1,2 @@
-# IMC-3
-Repository for SWE1 
+# IMC-Team-3
+Repository for SWE1 Work
