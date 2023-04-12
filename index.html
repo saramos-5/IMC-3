@@ -28,7 +28,7 @@
                         <p>Logs generated from alerts</p>
                     </div>
                     <div class="button_container">
-                        <button>Export</button>
+                        <button onclick="to_export()">Export</button>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,9 @@
         </div>
     </div>
     <div id="exit_wrapper">
-        <button id="Exit_Button">Exit System</button>
+        <button id="Exit_Button" onclick="to_exit()">Exit System</button>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="actions.js"></script>
 </html>
