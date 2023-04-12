@@ -1,0 +1,52 @@
+body{
+    background-color: #E7E2E2;
+}
+
+h1{
+    font-family: 'Faster One';font-size: 22px;
+}
+p{
+    font-family: 'Exo 2';font-size: 22px;
+}
+button{
+    font-family: 'Exo 2';font-size: 22px;
+}
+.title_export{
+    text-align: center;
+    height: 64px;
+    width: 100%;
+    background-color: #7F9AC1;
+    border-radius: 10px;
+}
+.export_container{
+    height: 120px;
+    width: 100%;
+}
+.export_options{
+    border: 1px solid black;
+    margin-top: 1%;
+}
+.items_export{
+    height: 500px;
+    width: 100%;
+}
+.export_title{
+    text-align: center;
+    border: 1px solid black;
+}
+.info_container{
+    float: left;
+}
+.button_container{
+    float: right;
+    width: 30%;
+    margin-top: 2%;
+}
+button{
+    width: 60%;
+    margin-right: 10px;
+}
+#exit_wrapper{
+    margin-top: 2%;
+    width: 20%;
+}
