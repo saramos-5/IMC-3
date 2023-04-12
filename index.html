@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,57 +8,63 @@
     <title>Document</title>
     <link href='https://fonts.googleapis.com/css?family=Faster One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Title -->
-    <div class="title_export">
+    <div class="container-fluid title_export">
         <h1 id="title_data">Export Data</h1>
     </div>
     <br>
     <!-- Items export selections -->
-    <div class="items_export">
-        <div class="export_container">
+    <div class="container-fluid items_export rounded p-2">
+        <div class="container rounded py-3" style="background-color: #E7E7E7;">
             <div class="export_title">
                 <p>Select items to be imported</p>
             </div>
-            <br>
-            <div class="export_options">
-                <div class="export_container">
-                    <div class="info_container">
-                        <p>Logs generated from alerts</p>
-                    </div>
-                    <div class="button_container">
-                        <button>Export</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="export_options">
-                <div class="export_container">
-                    <div class="info_container">
-                        <p>PCAP Files</p>
-                    </div>
-                    <div class="button_container">
-                        <button>Export</button>
+            <hr />
+            <div class="p-3 rounded" style="background-color: #FFFFFF;">
+                <div>
+                    <div class="export_container">
+                        <div class="info_container">
+                            <p>Logs generated from alerts</p>
+                        </div>
+                        <div class="button_container">
+                            <a href="export.html" class="btn btn-primary w-75">Export</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="export_options">
-                <div class="export_container">
-                    <div class="info_container">
-                        <p>Configuration files</p>
+                <hr />
+                <div>
+                    <div class="export_container">
+                        <div class="info_container">
+                            <p>PCAP Files</p>
+                        </div>
+                        <div class="button_container">
+                            <a href="#" class="btn btn-primary w-75">Export</a>
+                        </div>
                     </div>
-                    <div class="button_container">
-                        <button>Export</button>
+                </div>
+                <hr />
+                <div>
+                    <div class="export_container">
+                        <div class="info_container">
+                            <p>Configuration files</p>
+                        </div>
+                        <div class="button_container">
+                            <a href="#" class="btn btn-primary w-75">Export</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="exit_wrapper">
-        <button id="Exit_Button">Exit System</button>
+        <button class="btn btn-secondary" id="Exit_Button">Exit System</button>
     </div>
 </body>
+
 </html>
