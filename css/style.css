@@ -14,7 +14,7 @@ button{
 .title_export{
     text-align: center;
     height: 64px;
-    width: 100%;
+    width: 95%;
     background-color: #7F9AC1;
     border-radius: 10px;
 }
@@ -22,17 +22,12 @@ button{
     height: 120px;
     width: 100%;
 }
-.export_options{
-    border: 1px solid black;
-    margin-top: 1%;
-}
 .items_export{
-    height: 500px;
-    width: 100%;
+    background-color: #C2D0E4;
+    width: 95%;
 }
 .export_title{
     text-align: center;
-    border: 1px solid black;
 }
 .info_container{
     float: left;

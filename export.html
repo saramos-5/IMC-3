@@ -1,45 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Export Logs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Faster One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <style>
+        thead {
+            background-color: #D9D9D9;
+        }
+
+        tbody {
+            background-color: #E7E7E7;
+        }
+    </style>
     <!-- Title -->
-    <div class="title_export">
+    <div class="container-fluid title_export">
         <h1 id="title_data">Export Data</h1>
     </div>
     <br>
-    <!-- Items export selections -->
-    <div class="items_export">
-        <div class="export_container">
-            <div class="export_title">
-                <p>Select items to be imported</p>
-            </div>
-            <br>
-            <div class="export_options">
-                <div class="export_container">
-                    <div class="info_container">
-                        <p>Logs generated from alerts</p>
-                    </div>
-                    <div class="button_container">
-                        <button>Export</button>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid py-3 rounded items_export">
+        <div class="container py-5 rounded" style="background-color: #E7E7E7">
+        <div class="export_title">
+            <p>Item(s) selected for export</p>
+        </div>
+        <hr />
+        <div class="container rounded py-5" style="background-color: #C2D0E4;">
 
-            <div class="export_options">
-                <div class="export_container">
-                    <div class="info_container">
-                        <p>PCAP Files</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Source</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Reason</th>
+                        <th scope="col">Severity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Port Scan</th>
+                        <td>00.0.0.00</td>
+                        <td>11.1.1.11</td>
+                        <td>Lorem ipsum dolor sit amet</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Port Scan</th>
+                        <td>00.0.0.00</td>
+                        <td>11.1.1.11</td>
+                        <td>Lorem ipsum dolor sit amet</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Port Scan</th>
+                        <td>00.0.0.00</td>
+                        <td>11.1.1.11</td>
+                        <td>Lorem ipsum dolor sit amet</td>
+                        <td>Medium</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="container mt-3" style="display: flex; justify-content: end;">
+            <div class="rounded p-3" style="width: 40%; background-color: #D9D9D9;">
+                    <div class="export_title">
+                        <p>Export Options</p>
                     </div>
-                    <div class="button_container">
-                        <button>Export</button>
+                    <hr />
+                    <div class="container py-3 rounded" style="background-color: #FFFFFF;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>CSV File Export</p>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-primary">Export</button>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>CSV File Export</p>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-primary">Export</button>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>CSV File Export</p>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-primary">Export</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
